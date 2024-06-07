@@ -1,0 +1,16 @@
+<!-- <div id="container" [formGroup] ="form">
+    <h1>Welcome back to this castle MR. {{form.value.userName}}</h1>
+    <input type="text" formControlName="userName" placeholder="Username">
+    <input type="password" formControlName="password" placeholder="Password">
+    <button (click)="login()" [disabled]="!form.valid">Login</button>
+</div> -->
+
+<div id="container" [formGroup]="form" class="demon-slayer-theme">
+    <img src="../../assets/image.png" alt="Demon Slayer Logo" class="logo">
+    <h1>Welcome back, Demon Slayer {{form.value.userName}}</h1>
+    <div class="form-fields">
+        <input type="text" formControlName="userName" placeholder="Username" class="input-field">
+        <input type="password" formControlName="password" placeholder="Password" class="input-field">
+    </div>
+    <button (click)="login()" [disabled]="!form.valid" class="login-button">Unleash Your Power</button>
+</div>
